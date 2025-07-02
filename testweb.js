@@ -24,7 +24,7 @@ document.getElementById("btnHitungDetail").addEventListener("click", function ()
     const namaTerpilih = document.getElementById("btnNama").innerText || "Belum Dipilih";
     const namaKomponen = currentKomponen;
 
-    fetch("https://script.google.com/macros/s/AKfycbwIDQoMQMp_Ij_o32Rw2a-8gHtIJdoyjraHUWz6jRBE9fcHA5z_ZJXRV4gyJnVGW4jLrg/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzbdcNSvFtPgy_X5vl859F2kPtnVp1NjDyDIqjy9P4juZJADZ3ebMoDsLMiwjzvPtujDQ/exec", {
         method: "POST",
         body: JSON.stringify({
             nama: namaTerpilih,
