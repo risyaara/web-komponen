@@ -1,0 +1,64 @@
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+th {
+    background-color: darksalmon;
+}
+
+tr {
+    background-color: whitesmoke;
+}
+
+tr:hover {
+    background-color: whitesmoke;
+}
+
+.btn-custom {
+    background-color: #800000 !important; /* warna latar merah maroon */
+    color: white !important; /* warna teks */
+    border: none !important; /* hilangkan border */
+    border-radius: 6px !important; /* sudut membulat */
+    padding: 6px 12px !important;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #a52a2a !important; /* warna saat hover */
+}
