@@ -24,8 +24,11 @@ document.getElementById("btnHitungDetail").addEventListener("click", function ()
     const namaTerpilih = document.getElementById("btnNama").innerText || "Belum Dipilih";
     const namaKomponen = currentKomponen;
 
-    fetch("https://script.google.com/macros/s/AKfycby8ATwCHHuPWMqs0_YLde7py1wL-EFW4sWwNeBN88ja_7t8Pe9Jel5RM73-m8d6TWebLw/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbywT6P1zfSuW2CHDNUFie7oI6YH0A1f8ol2o-uoRJ9sJ7WI_2Uw2FJ5kGIh3DsXx0eWNQ/exec", {
         method: "POST",
+     headers: {
+            "Content-Type": "application/json"
+        }
         body: JSON.stringify({
             nama: namaTerpilih,
             namaKomponen: namaKomponen,
@@ -33,9 +36,7 @@ document.getElementById("btnHitungDetail").addEventListener("click", function ()
             diambil: diambil,
             ditambahkan: ditambahkan
         }),
-        headers: {
-            "Content-Type": "application/json"
-        }
+      
     })
         .then(response => response.json())
         .then(data => {
